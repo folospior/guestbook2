@@ -1,0 +1,11 @@
+package components
+
+import "github.com/folospior/guestbook2/views/layouts"
+
+templ Index() {
+    @layouts.Base() {
+        @title()
+        @bookInput()
+        @writeIns()
+    }
+}

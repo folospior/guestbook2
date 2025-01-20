@@ -1,0 +1,10 @@
+package components
+
+templ bookInput() {
+    <div>
+        <form hx-post="/writeIn" hx-target="#writeIns" hx-swap="beforeend">
+            <input type="text" name="content" id="content">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+}
