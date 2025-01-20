@@ -3,3 +3,9 @@ package components
 templ WriteIn(content string) {
     <p>{content}</p>
 }
+
+templ WriteIns(writeIns []string) {
+    for _, writeIn := range writeIns {
+        <p>{writeIn}</p>
+    }
+}

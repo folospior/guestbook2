@@ -20,3 +20,7 @@ func HandleWriteIn(writer http.ResponseWriter, request *http.Request) {
 
 	render(writer, request, components.WriteIn(content))
 }
+
+func HandleGetWriteIns(writer http.ResponseWriter, request *http.Request) {
+	render(writer, request, components.WriteIns([]string{"hello", "world", "fuck"}))
+}
